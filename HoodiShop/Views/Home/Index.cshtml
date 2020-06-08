@@ -216,11 +216,11 @@
     @foreach (var item in Model.elencoBeat)
     {
         <div class="beatBox">
-            <div onclick="audioPlay('@item.filename')" class="beatName">
-                @item.name
-            </div>
-
-            <input type="button" class="beatButton" value="Reproduce" onclick="audioPlay('@item.filename')" />
+            <a>
+                <div onclick="audioPlay('@item.filename')" class="beatName">
+                    @item.name
+                </div>
+            </a>
         </div>
     }
 </div>
